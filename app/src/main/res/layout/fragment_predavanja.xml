@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".ProfesorFragments.PredavanjaFragment">
+
+    <SearchView
+        android:id="@+id/searchView_fragment_predavanja"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:queryHint="Naziv fajla..."
+        app:layout_constraintBottom_toTopOf="@+id/view_pptx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_pptx"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FAFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/view_zip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView_fragment_predavanja" />
+
+    <ImageView
+        android:id="@+id/iv_fragment_predavanja_pptx"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_pptx_file_format"
+        app:layout_constraintStart_toStartOf="@+id/view_pptx"
+        app:layout_constraintTop_toTopOf="@+id/view_pptx" />
+
+    <TextView
+        android:id="@+id/tv_pptx_ime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Uputstvo.pptx"
+        app:layout_constraintStart_toEndOf="@+id/iv_fragment_predavanja_pptx"
+        app:layout_constraintTop_toTopOf="@+id/view_pptx" />
+
+    <TextView
+        android:id="@+id/tv_pptx_velicina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="2.45MB"
+        app:layout_constraintBottom_toBottomOf="@+id/view_pptx"
+        app:layout_constraintStart_toEndOf="@+id/iv_fragment_predavanja_pptx" />
+
+    <Button
+        android:id="@+id/btn_view_pptx"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#FAFAFA"
+        android:fontFamily="@font/roboto_medium"
+        android:text="X"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/view_pptx"
+        app:layout_constraintTop_toTopOf="@+id/view_pptx" />
+
+    <View
+        android:id="@+id/view_zip"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FAFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/view_doc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_pptx" />
+
+    <ImageView
+        android:id="@+id/iv_view_zip"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_zip_file_format"
+        app:layout_constraintStart_toStartOf="@+id/view_zip"
+        app:layout_constraintTop_toTopOf="@+id/view_zip" />
+
+    <TextView
+        android:id="@+id/tv_zip_ime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Test1.zip"
+        app:layout_constraintStart_toEndOf="@+id/iv_view_zip"
+        app:layout_constraintTop_toTopOf="@+id/view_zip" />
+
+    <TextView
+        android:id="@+id/tv_view_zip_velicina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="5.35MB"
+        app:layout_constraintBottom_toBottomOf="@+id/view_zip"
+        app:layout_constraintStart_toEndOf="@+id/iv_view_zip" />
+
+    <Button
+        android:id="@+id/btn_view_zip"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#FAFAFA"
+        android:fontFamily="@font/roboto_medium"
+        android:text="X"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/view_zip"
+        app:layout_constraintTop_toTopOf="@+id/view_zip" />
+
+    <View
+        android:id="@+id/view_doc"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FAFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/btn_fragment_predavanja_biraj_fajl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_zip" />
+
+    <ImageView
+        android:id="@+id/iv_view_doc"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_zip_file_format"
+        app:layout_constraintStart_toStartOf="@+id/view_doc"
+        app:layout_constraintTop_toTopOf="@+id/view_doc" />
+
+    <TextView
+        android:id="@+id/tv_view_doc_ime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Kolokvijum1.doc"
+        app:layout_constraintStart_toEndOf="@+id/iv_view_doc"
+        app:layout_constraintTop_toTopOf="@+id/view_doc" />
+
+    <TextView
+        android:id="@+id/tv_view_doc_velicina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="2.45MB"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintStart_toEndOf="@+id/iv_view_doc" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:max="@android:integer/config_mediumAnimTime"
+        android:progress="150"
+        app:layout_constraintBottom_toBottomOf="@+id/view_doc"
+        app:layout_constraintStart_toEndOf="@+id/iv_view_doc" />
+
+    <Button
+        android:id="@+id/btn_view_doc"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#FAFAFA"
+        android:fontFamily="@font/roboto_medium"
+        android:text="X"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/view_doc"
+        app:layout_constraintTop_toTopOf="@+id/view_doc" />
+
+    <Button
+        android:id="@+id/btn_fragment_predavanja_biraj_fajl"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/rounded_button"
+        android:text="Izaberi fajl"
+        android:textAllCaps="false"
+        android:textColor="#FAFAFA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_doc" />
+
+    <Button
+        android:id="@+id/btn_fragment_predavanja_potvrdi"
+        android:layout_width="70dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_second"
+        android:fontFamily="@font/roboto_medium"
+        android:text=">"
+        android:textColor="#FAFAFA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_fragment_predavanja_biraj_fajl"
+        app:layout_constraintVertical_bias="0.837" />
+</androidx.constraintlayout.widget.ConstraintLayout>

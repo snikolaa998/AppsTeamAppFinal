@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <View
+        android:id="@+id/view_alert"
+        android:layout_width="230dp"
+        android:layout_height="303dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FAFAFA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_alert_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Status:"
+        android:textColor="@color/dashboard_color"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/view_alert"
+        app:layout_constraintStart_toStartOf="@+id/view_alert"
+        app:layout_constraintTop_toTopOf="@+id/view_alert" />
+
+    <ImageView
+        android:id="@+id/iv_alert_custom"
+        android:layout_width="122dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_alert"
+        app:layout_constraintEnd_toEndOf="@+id/view_alert"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="@+id/view_alert"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alert_status"
+        app:layout_constraintVertical_bias="0.124"
+        app:srcCompat="@drawable/ic_check" />
+
+    <TextView
+        android:id="@+id/tv_alert_status_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Uspesno ste objavili obavezu!"
+        android:textColor="@color/dashboard_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_alert"
+        app:layout_constraintEnd_toEndOf="@+id/view_alert"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="@+id/view_alert" />
+
+    <Button
+        android:id="@+id/btn_alert_ok"
+        android:layout_width="71dp"
+        android:layout_height="57dp"
+        android:background="@drawable/rounded_button_second"
+        android:fontFamily="@font/roboto_medium"
+        android:text="OK"
+        android:textColor="#FAFAFA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_alert"
+        app:layout_constraintVertical_bias="0.191" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2179F1</color>
+    <color name="colorPrimaryDark">#2179F1</color>
+    <color name="colorAccent">#2179F1</color>
+    <color name="AppBar">#2179F1</color>
+    <color name="dashboard_color">#323643</color>
+    <color name="dashboard_recycler_background_color">#7BB3FF</color>
+</resources>
